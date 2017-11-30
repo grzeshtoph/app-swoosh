@@ -115,9 +115,12 @@
                                     <constraint firstAttribute="height" constant="50" id="sn9-84-MJt"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
-                                <state key="normal" title="Next">
+                                <state key="normal" title="NEXT">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="onNextTapped:" destination="c8x-TF-BjW" eventType="touchUpInside" id="BIG-y8-t5O"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="TPn-GI-KQ5">
                                 <rect key="frame" x="0.0" y="40" width="375" height="66"/>
@@ -208,6 +211,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Xna-az-HWX"/>
                     </view>
+                    <connections>
+                        <segue destination="tgT-IW-3gB" kind="show" identifier="skillVCSegue" id="ZUU-Mh-6Du"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jJd-ud-Tzo" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="tAB-FP-ewl" userLabel="Exit" sceneMemberID="exit"/>
@@ -257,6 +263,9 @@
                                         <state key="normal" title="Beginner">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onBeginnerTapped:" destination="tgT-IW-3gB" eventType="touchUpInside" id="Qio-gd-67Y"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0yf-up-Jc1" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                         <rect key="frame" x="184" y="0.0" width="159" height="50"/>
@@ -278,7 +287,7 @@
                                     <constraint firstAttribute="height" constant="50" id="IUy-cH-e7c"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
-                                <state key="normal" title="Finish">
+                                <state key="normal" title="FINISH">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
@@ -304,7 +313,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fvc-c9-ifS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1546.4000000000001" y="131.78410794602701"/>
+            <point key="canvasLocation" x="1646" y="133"/>
         </scene>
     </scenes>
     <resources>

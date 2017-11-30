@@ -10,6 +10,8 @@ import UIKit
 
 class SkillVC: UIViewController {
 
+    @IBAction func onBeginnerTapped(_ sender: Any) {
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
